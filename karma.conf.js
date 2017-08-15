@@ -29,7 +29,7 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      'build/tween.js': ['coverage'],
+      'build/tweenable.js': ['coverage'],
       'spec/*.spec.babel.js': ['webpack'],
     },
 
@@ -66,7 +66,7 @@ module.exports = function(config) {
     //  - config.[LOG_DISABLE|LOG_ERROR|LOG_WARN|LOG_INFO|LOG_DEBUG]
     logLevel: config.LOG_INFO,
     sauceLabs: {
-      testName: 'mo·js timeline'
+      testName: 'mo·js util tweenable'
     },
     captureTimeout: 5000,
     customLaunchers,
